@@ -56,11 +56,13 @@ function App() {
           labelSize={1}
           labelDotRadius={0.2}
           labelAltitude={0.01}
+          labelsTransitionDuration={200} //ms
           labelLat={d => d.lat}
           labelLng={d => d.lng}
           labelText={d => d.name}
           width={window.innerWidth * 2}
           globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+          backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
       />
     </div>
   );

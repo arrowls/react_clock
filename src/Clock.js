@@ -12,7 +12,6 @@ export default class Clock extends React.Component {
 		const str = timezones.find(tz => tz.code === timezone).offset;
 		const crop = str.slice(0, 3);
 		if (crop.startsWith('-')) {
-			console.log(Number(crop.slice(1, 3)) * -1)
 			return  Number(crop.slice(1, 3)) * -1;
 		}
 		return Number(crop.slice(1, 3));
